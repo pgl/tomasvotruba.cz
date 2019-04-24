@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Testing Packages | Tomas Votruba</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    
+    <link rel="alternate" type="application/rss+xml" title="Tomas Votruba Blog RSS" href="/rss.xml">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css" integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
+
+        <link href="/assets/bootstrap/bootstrap.min.css?v=389425898" rel="stylesheet" type="text/css" />
+
+    <link href="/assets/prism/prism.css?v=1624052759" rel="stylesheet" type="text/css" />
+
+        <link href="/assets/css/style.css?v=1335792455" rel="stylesheet" type="text/css" />
+
+    <link href="/assets/gifplayer/gifplayer.css" rel="stylesheet" type="text/css" />
+
+        <link href="/assets/css/checklist.css?v=1919471485" rel="stylesheet" type="text/css" />
+</head>
+    <body>
+        <div class="hidden-sm-down">
+    <nav class="navbar">
+        <div class="container-fluid">
+            <ul>
+                <li id="logo">
+                    <img src="https://avatars1.githubusercontent.com/u/924196?s=60&v=4" class="avatar">
+                    Tomas Votruba
+                </li>
+                <li class="">
+                    <a href="/">Blog</a>
+                </li>
+                <li class="active">
+                    <a href="/php-framework-trends/">Trends</a>
+                </li>
+                <li class="">
+                    <a href="/clusters/">Clusters</a>
+                </li>
+                <li class="">
+                    <a href="/mission/">Mission</a>
+                </li>
+                <li class="">
+                    <a href="/talks/">Talks</a>
+                </li>
+                <li class="">
+                    <a href="/contact/">Contact</a>
+                </li>
+                <li id="top-menu-search">
+                    <form method="get" action="https://www.google.com/search" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction">
+                        <meta itemprop="target" content="https://www.google.com/search?q={q}"/>
+                        <input name="sitesearch" value="tomasvotruba.cz" type="hidden"/>
+                        <input itemprop="query-input" type="text" id="search-query" class="form-control" required="required" name="q" placeholder="Search..." autocomplete="off"/>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="hidden-md-up">
+    <nav class="navbar" id="mobile-menu">
+        <div class="container">
+            <a href="/" class="col-3 col-sm-3 ">
+                <em class="fas fa-book"></em>
+                <br>
+                PHP Blog
+            </a>
+            <a href="/clusters/" class="col-3 col-sm-3 ">
+                <em class="fas fa-share-alt"></em>
+                <br>
+                Clusters
+            </a>
+            <a href="/php-framework-trends/" class="col-3 col-sm-3 active">
+                <em class="fas fa-chart-bar"></em>
+                <br>
+                Trends
+            </a>
+            <a href="/contact/" class="col-3 col-sm-3 ">
+                <em class="fas fa-phone"></em>
+                <br>
+                Contact
+            </a>
+        </div>
+    </nav>
+
+    <div class="hidden-md-up text-center row" id="top-menu-search-mobile">
+        <!-- inspired and taken from: https://github.com/yegor256/blog/blob/master/_layouts/default.html -->
+        <form method="get" action="https://www.google.com/search" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction" class="col-md-12">
+            <meta itemprop="target" content="https://www.google.com/search?q={q}"/>
+            <input name="sitesearch" value="tomasvotruba.cz" type="hidden"/>
+            <input itemprop="query-input" type="text" id="search-query" class="form-control" required="required" name="q" placeholder="Search with Google..." autocomplete="off"/>
+        </form>
+    </div>
+</div>
+
+        <div id="content">
+            
+<div class="container-fluid">
+    <h1>Testing Packages</h1>
+
+    <p class="text-muted mb-4 small">Updated at 24. 4. 02:05</p>
+
+    <table class="table table-bordered table-responsive table-striped">
+        <thead class="thead-inverse">
+            <tr>
+                <th class="text-center w-25">Package</th>
+                <th class="text-center w-25">Year Trend</th>
+                <th class="text-center w-25">Monthly Average</th>
+                <th class="text-center w-25">Yearly Total</th>
+            </tr>
+        </thead>
+
+                    <tr>
+                <td>
+                    <a href="https://packagist.org/packages/codeception/codeception/stats">
+                        codeception
+                    </a>
+                </td>
+                <td class="text-right">
+                        <nobr>
+                    <strong>
+                <span class="text-success">+ 18 %</span>
+            </strong>
+            </nobr>
+
+                </td>
+                <td class="text-right">
+                        13 260
+
+                </td>
+                <td class="text-right">
+                        4 039 590
+
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                    <a href="https://packagist.org/packages/mockery/mockery/stats">
+                        mockery
+                    </a>
+                </td>
+                <td class="text-right">
+                        <nobr>
+                    <strong>
+                <span class="text-success">+ 14 %</span>
+            </strong>
+            </nobr>
+
+                </td>
+                <td class="text-right">
+                        65 738
+
+                </td>
+                <td class="text-right">
+                        19 775 790
+
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                    <a href="https://packagist.org/packages/phpunit/phpunit/stats">
+                        phpunit
+                    </a>
+                </td>
+                <td class="text-right">
+                        <nobr>
+                    <strong>
+                <span class="text-success">+ 10 %</span>
+            </strong>
+            </nobr>
+
+                </td>
+                <td class="text-right">
+                        131 175
+
+                </td>
+                <td class="text-right">
+                        40 600 110
+
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                    <a href="https://packagist.org/packages/behat/behat/stats">
+                        behat
+                    </a>
+                </td>
+                <td class="text-right">
+                        <nobr>
+                    <strong>
+                <span class="text-success">+ 8 %</span>
+            </strong>
+            </nobr>
+
+                </td>
+                <td class="text-right">
+                        16 351
+
+                </td>
+                <td class="text-right">
+                        5 226 930
+
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                    <a href="https://packagist.org/packages/phpspec/phpspec/stats">
+                        phpspec
+                    </a>
+                </td>
+                <td class="text-right">
+                        <nobr>
+                    <span class="text-danger">- 9 %</span>
+            </nobr>
+
+                </td>
+                <td class="text-right">
+                        6 577
+
+                </td>
+                <td class="text-right">
+                        2 469 780
+
+                </td>
+            </tr>
+            </table>
+
+    <h2 id="comments">What Do You Think?</h2>
+
+    <div id="disqus_thread"></div>
+
+<script type="text/javascript">
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = '//' + 'itsworthsharing' + '.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+</div>        </div>
+
+        <script src="/assets/js/jquery-3.3.1.slim.min.js?=1298722306"></script>
+<script src="/assets/gifplayer/jquery.gifplayer.js?=1885332964"></script>
+<script src="/assets/js/cluster-checklist.js?=1947098069"></script>
+<script src="/assets/js/cluster-expanable.js?=180660698"></script>
+
+<script>
+    ga=function(){ ga.q.push(arguments) };
+    ga.q=[];
+    ga.l=+new Date;
+    ga('create', 'UA-46082345-1', 'auto');
+    ga('send','pageview');
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+<script src="/assets/prism/prism.js"></script>
+
+<script>
+    $('.gifplayer').gifplayer();
+</script>
+
+<div class="text-center mt-5" id="footer">
+    <div class="row">
+        <div class="col-12">
+            Join 17 579 PHP developers every month: <a href="/rss.xml">RSS</a>&nbsp;or&nbsp;<a href="https://twitter.com/votrubaT">@votrubaT</a>
+        </div>
+    </div>
+
+    <p>
+        Build by <a href="/thank-you/">65 people</a>
+
+        <span class="pl-2 pr-2">•</span>
+
+        Runs on <a href="https://www.statie.org/">Statie</a>
+
+        <span class="pl-2 pr-2">•</span>
+
+        <a href="/now/">Now</a>
+
+        <span class="hidden-sm-down">
+            <span class="pl-2 pr-2">•</span>
+            Hosted on <a href="https://github.com/tomasvotruba/tomasvotruba.cz">GitHub</a>
+        </span>
+    </p>
+</div>
+    </body>
+</html>
